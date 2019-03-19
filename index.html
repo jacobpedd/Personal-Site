@@ -11,10 +11,11 @@
 			<h3>Jacob Peddicord</h3>
 		</div>
 		<div class='description'>
-			<p>I am a developer and aspiring entrepreneur looking to work with and create disruptive teams. 
-				Born and raised in Kansas City, my goal is to combine Silicon Valley hustle with Heartland 
-				values. Searching for work opportunities and ideas, if you have either email me at the 
-				email in my resume below. </p>
+			<p>
+				I am a software developer and aspiring entrepreneur looking to work on and create innovative products.
+				Most of my experience is in web and mobile development, I have a passion for creating MVPs and seeing
+				an idea turn into a product. 
+			</p>
 		</div>
 	</div>
 	<div class='header'>
@@ -23,20 +24,36 @@
 	<div class="experience-container">
 		<div class='card'>
 			<div class='card-img'>
+				<img class="card-img-img" src='zillow.png' />
+			</div>
+			<div class='card-title'>
+				<h3>Zillow</h3>
+			</div>
+			<div class='card-subtitle'>
+				<h5>Intern: Summer 2019</h5>
+			</div>
+			<div class='card-content'>
+				<p>
+						COMING SOON: This summer I will be interning at Zillow's HQ in downtown Seattle!
+				</p>
+			</div>
+		</div>
+		<div class='card'>
+			<div class='card-img'>
 				<img class="card-img-img" src='cboe.png' />
 			</div>
 			<div class='card-title'>
 				<h3>Cboe Global Markets</h3>
 			</div>
 			<div class='card-subtitle'>
-				<p>Web Intern - Summer 2018</p>
+				<h5>Web Intern: Summer 2018</h5>
 			</div>
 			<div class='card-content'>
-				<h5>
+				<p>
 					Developed a full stack web application to integrate with exchange technology and facilitate a 
-					better user experience for testing across equity/option/futures exchanges. Used Python to create 
+					better user experience for testing across equity, option, and futures exchanges. Used Python to create 
 					Django backend, libraries, and tests and Javascript on the front end.
-				</h5>
+				</p>
 			</div>
 		</div>
 		<div class='card'>
@@ -47,32 +64,15 @@
 				<h3>ShotTracker</h3>
 			</div>
 			<div class='card-subtitle'>
-				<p>Software Engineering Intern - May 2018</p>
+				<h5>Web Intern: May 2018</h5>
 			</div>
 			<div class='card-content'>
-				<h5>
+				<p>
 					Spent a week at ShotTracker developing an application to be used by the marketing department 
 					to increase social media engagement with players. Developed a complete Django web application 
 					using Python. Most importantly, I learned a lot about entrepreneurship from the founders, Davyeon 
 					and Bruce.
-				</h5>
-			</div>
-		</div>
-		<div class='card'>
-			<div class='card-img'>
-				<img class="card-img-img" src='pradl.png' />
-			</div>
-			<div class='card-title'>
-				<h3>Pradl</h3>
-			</div>
-			<div class='card-subtitle'>
-				<p>Co-Founder  - Since Oct 2017</p>
-			</div>
-			<div class='card-content'>
-				<h5>
-						A startup I am working on with two classmates. Makes posting your phone number online 
-						safer and managing your customers easier. Launch summer 2018.
-				</h5>
+				</p>
 			</div>
 		</div>
 		<div class='card'>
@@ -83,15 +83,123 @@
 				<h3>Grow Digitally</h3>
 			</div>
 			<div class='card-subtitle'>
-				<p>Web Develoepr - 2015-2017</p>
+				<h5>Web Developer: 2015-2017</h5>
 			</div>
 			<div class='card-content'>
-				<h5>
-						Worked as an intern assisting with and eventually developing client sites. As I 
-						learned I worked my way from sourcing stock photos to writing a custom Wordpress plugin 
-						in PHP for a multimillion-dollar nonprofit client. I also learned a lot about 
-						entrepreneurship and small business from Kyle Claypool, the founder.hone number online.
-				</h5>
+				<p>
+					Worked as an intern assisting with and eventually developing client sites. As I 
+					learned I worked my way from sourcing stock photos to writing a custom Wordpress plugin 
+					in PHP for a multimillion-dollar nonprofit client. I also learned a lot about 
+					entrepreneurship and small business from Kyle Claypool, the founder.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<h1>Competitions</h1>
+	</div>
+	<div class='competition-container'>
+		<table>
+			<thead>
+				<td>Name</td>
+				<td>Date</td>
+				<td>Status</td>
+			</thead>
+			<tr>
+				<td>The Pitch by First National Bank</td>
+				<td>Current</td>
+				<td class="finalist">Finalist</td>
+			</tr>
+			<tr>
+				<td>Adobe UNL Creative Jam Live 2019 Live</td>
+				<td>Feb 19, 2019</td>
+				<td class="winner">Winner!</td>
+			</tr>
+			<tr>
+				<td>Cornhacks</td>
+				<td>Jan 19, 2019</td>
+				<td class="participant">Participant</td>
+			</tr>
+			<tr>
+				<td>Y Combinator Hackathon</td>
+				<td>April 11, 2018</td>
+				<td class="participant">Participant</td>
+			</tr>
+			<tr>
+				<td>UNL Quick Pitch</td>
+				<td>Oct 22, 2018</td>
+				<td class="participant">Participant</td>
+			</tr>
+		</table>
+	</div>
+	<script>
+	function show(id) {
+		elements = document.getElementById('projects').childNodes;
+		for (element of elements) {
+			element.style = "display:none;";
+		}
+		document.getElementById(id).style = "";
+	}
+	</script>
+	<div class="project-container">
+		<div class="header">
+			<h1>Projects</h1>
+		</div>
+		<ul class='project-nav'>
+			<li onclick="show('foundry')">Foundry Pickup</li>
+			<li onclick="show('dm')">Dance Marathon</li>
+			<li onclick="show('discoverpod')">DiscoverPod</li>
+			<li onclick="show('pradl')">Pradl</li>
+			<li onclick="show('wl')">Wishlist+</li>
+		</ul>
+		<div id='projects'>
+			<div class='project-content' id='foundry'>
+				<img src="foundry.png">
+				<h3>Foundry Pickup</h3>
+				<h5>Spring 2019 - Present</h5>
+				<p>
+					Developing a cross platform mobile app to enable coffee pickup orders. Integrating with existing
+					square system and developing using Flutter. 
+				</p>
+			</div>
+			<div class='project-content' id='dm' style = "display:none;">
+				<img src="dm.png">
+				<h3>Dance Marathon</h3>
+				<h5>Spring 2018 - Present</h5>
+				<p>
+					I am the technology director of the largest student run philanthropy on campus at UNL. We raise 
+					money for Children's Hospital in Omaha. As technology directory I have written a lot of scripts 
+					in Python to analyze our registration and donation data to update the team on our progress. I also
+					lead my comittee to developing a check-in web application and rebuilt the website. 
+				</p>
+			</div>
+			<div class='project-content' id='discoverpod' style = "display:none;">
+				<h3>DiscoverPod</h3>
+				<h5>Spring 2018 - Present</h5>
+				<p>
+					A side project I am working on to deliver a new podcast weekly. Tackling the problem of podcast
+					discovery. 
+				</p>
+			</div>
+			<div class='project-content' id='pradl' style = "display:none;">
+				<img src='pradl.png'>
+				<h3>Pradl</h3>
+				<h5>Oct 2017 - May 2018</h5>
+				<p>
+					A startup I worked on with two classmates. The goal was to make posting your phone number
+					online safer and managing client relationships easier. While I engineered the backend of a 
+					solution for a Craigslist product, the business ultimately never got of the ground.  
+				</p>
+			</div>
+			<div class='project-content' id='wl' style = "display:none;">
+				<img src='wl+.png'>
+				<h3>Wishlist+</h3>
+				<h5>Spring 2017</h5>
+				<p>
+					My first side project, a mobile app that allowed you to save App Store/iTunes items for later. 
+					You could then get a notification when they went on sale at a certain price. It launched in the 
+					App store in June 2017 and was taken down around a month later after receiving thousands of downloads. 
+				</p>
 			</div>
 		</div>
 	</div>
@@ -99,7 +207,7 @@
 		<div></div>
 		<div class='resume-label-container'>
 			<h3>Resume:</h3>
-			<p>For all the little details</p>
+			<p>If your feeling official</p>
 		</div>
 			<div class='resume-content-container'>
 				<a href='https://unl.box.com/s/0m1rkisewqok4g9j7t02xas472ssn1e9'>

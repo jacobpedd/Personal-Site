@@ -24,18 +24,27 @@ html, body { margin: 0; padding: 0; }
 
 h1 {
 	font-family: "SF Display Bold", -apple-system, BlinkMacSystemFont, “Roboto”, sans-serif;
+	font-size: 50px;
+}
+
+h2 {
+	font-family: "SF Display Bold", -apple-system, BlinkMacSystemFont, “Roboto”, sans-serif;
+	font-size: 40px;
 }
 
 h3 {
 	font-family: "SF Display Bold", -apple-system, BlinkMacSystemFont, “Roboto”, sans-serif;
+	font-size: 35px;
 }
 
 h5 {
 	font-family: "SF Display Regular", -apple-system, BlinkMacSystemFont, “Roboto”, sans-serif;
+	font-size: 20px;
 }
 
-p {
+p, td, li {
 	font-family: "SF Display Light", -apple-system, BlinkMacSystemFont, “Roboto”, sans-serif;
+	font-size: 20px;
 }
 
 .info-container {
@@ -76,6 +85,8 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	height: 200px;
+	width: 200px;
 }
 
 .content {
@@ -124,10 +135,23 @@ p {
 	"img subtitle"
 	"img content";
 	margin: 20px;
+	padding: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
 	flex: 1;
-	min-width: 400px;
+	min-width: 300px;
+}
+
+.card h5 {
+	margin: 0;
+}
+
+.card h3 {
+	margin: 0;
+}
+
+.card p {
+	margin: 0;
 }
 
 .card-img {
@@ -145,19 +169,111 @@ p {
 
 .card-title {
 	grid-area: 'title';
-	margin-bottom: -15px;
 }
 
 .card-subtitle {
 	grid-area: 'subtitle';
-	margin-top: -15px;
-	margin-bottom: -10px;
+	margin-bottom: 10px;
 }
 
 .card-content {
 	grid-area: 'content';
-	margin-top: -10px;
-	margin-right: 15px;
-
 }
 
+.card-content  p {
+	word-wrap: break-word;
+}
+
+.competition-container {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 10px;
+	max-width: 900px;
+	margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+
+thead {
+	font-weight: bold;
+}
+
+td {
+	padding: 0 10px 0 10px;
+}
+
+.winner {
+	background-color: green;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.finalist {
+	background-color: blue;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.participant {
+	background-color: darkgoldenrod;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+}
+
+.project-nav {
+	text-align: center;
+	padding-left: 0;
+}
+
+.project-nav li {
+	display: inline;
+	list-style-type: none;
+	line-height: 40px;
+	margin: 5px;
+	padding: 5px;
+	background: lightgreen;
+	border-radius: 5px;
+}
+
+.project-content {
+	margin-left: auto;
+	margin-right: auto; 
+	max-width: 500px;
+}
+
+.project-content img {
+	margin: 10px;
+	max-height: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.project-content h3 {
+	text-align: center;
+}
+
+.project-content h5 {
+	text-align: center;
+}
+
+.project-content p {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
